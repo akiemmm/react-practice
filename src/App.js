@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import Link from './components/link.js';
+import Footer from './components/footer.js';
+
+const checkIn = () => {
+  var pass = prompt("パスワードを入力して下さい:","");
+  if (pass != null) window.location.href = "https://yu-sei-m.github.io/" + pass;
+}
 
 function App() {
+  const logo = '/images/logo.png';  
+  const illust = '/images/color39.png';
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <img src={illust} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <b>フィットネス・エンジニアの勉強会</b>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Link text="はじめて学ぶReact" onClick={()=>checkIn()}/>
       </header>
+      <Footer/>
     </div>
   );
 }
