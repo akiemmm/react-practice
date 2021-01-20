@@ -16,7 +16,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <img src={illust} className="App-logo" alt="logo" />
         <p>
-          <b>フィットネス・エンジニアの勉強会</b>
+          <b>フィットネス・エンジニアの勉強会です</b>
         </p>
         <Link text="はじめて学ぶReact" onClick={()=>checkIn()}/>
       </header>
